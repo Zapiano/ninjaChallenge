@@ -5,7 +5,7 @@ function populateFormFields(requestFields, formId) {
     var fieldContainer = document.createElement('div');
     var label = document.createElement('label');
 
-    fieldContainer.className += 'formField';
+    fieldContainer.className += 'form-field';
 
     label.textContent = value.label;
 
@@ -15,9 +15,5 @@ function populateFormFields(requestFields, formId) {
     fieldContainer.appendChild(field);
     requestForm.appendChild(fieldContainer);
   });
-
-  var submitButton = document.createElement('button');
-  submitButton.textContent = "Submit!";
-  requestForm.appendChild(submitButton);
 }
 
