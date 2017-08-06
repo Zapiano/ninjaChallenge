@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Precisando de Cabeleireiros? | GetNinjas</title>
+
+    <link href="./assets/css/stylesheet.css" rel="stylesheet">
+    <script src="./assets/javascript/populateFormFields.js"></script>
+  </head>
+
+  <body>
+
+    <form>
+      <fieldset id='requestForm'>
+      </fieldset>
+
+      <fieldset id='userForm'>
+      </fieldset>
+    </form>
+
+    <script>
+      var requestURL = './public/fields.json';
+      var request = new XMLHttpRequest();
+
+      request.open('GET', requestURL);
+      request.responseType = 'json';
+      request.send();
+
+      request.onload = function() {
+        var response = request.response;
+        var requestFields = response._embedded.request_fields;
+        var userFields = response._embedded.user_fields;
+
+        populateFormFields(requestFields, 'requestForm');
+        populateFormFields(userFields, 'userForm');
+      }
+    </script>
+  </body>
+</html>
