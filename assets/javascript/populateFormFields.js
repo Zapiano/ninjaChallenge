@@ -1,15 +1,23 @@
 function populateFormFields(requestFields, formId) {
   var requestForm = document.getElementById(formId);
 
-  requestFields.forEach(function(value, index, array) {
-    var formField = document.createElement('div');
-    var fieldLabel = document.createElement('label');
+  requestFields.forEach(function(value, i, a) {
+    var fieldContainer = document.createElement('div');
+    var label = document.createElement('label');
 
-    formField.className += 'formField';
+    fieldContainer.className += 'formField';
 
-    fieldLabel.textContent = value.label;
+    label.textContent = value.label;
 
-    formField.appendChild(fieldLabel);
-    requestForm.appendChild(formField);
+    var field = createField(value);
+
+    fieldContainer.appendChild(label);
+    fieldContainer.appendChild(field);
+    requestForm.appendChild(fieldContainer);
   });
+
+  var submitButton = document.createElement('button');
+  submitButton.textContent = "Submit!";
+  requestForm.appendChild(submitButton);
 }
+
