@@ -1,9 +1,9 @@
 function createCheckbox(fieldInfo) {
   var checkboxList = document.createElement('ul');
   checkboxList.setAttribute('name', fieldInfo.name);
-  if (fieldInfo.required) { checkboxList.className += 'requiredCheckbox'; }
+  if (fieldInfo.required) { checkboxList.classList.add('requiredCheckbox'); };
 
-  options = fieldInfo.values;
+  var options = fieldInfo.values;
 
   var optionCount = 0;
 
@@ -16,7 +16,7 @@ function createCheckbox(fieldInfo) {
     input.setAttribute('type', 'checkbox');
     label.textContent = value;
 
-    var optionId = fieldInfo.name + String(optionCount)
+    var optionId = fieldInfo.name + String(optionCount);
     optionCount += 1;
 
     input.setAttribute('id', optionId);

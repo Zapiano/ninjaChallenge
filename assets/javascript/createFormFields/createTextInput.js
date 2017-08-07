@@ -5,7 +5,7 @@ function createTextInput(fieldInfo, type='text') {
   input.setAttribute('placeholder', fieldInfo.placeholder);
   input.setAttribute('name', fieldInfo.name);
 
-  if (fieldInfo.required) { input.className += 'requiredTextInput'; }
+  if (fieldInfo.required) { input.classList.add('requiredTextInput'); };
 
   return input;
 }

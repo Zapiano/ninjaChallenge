@@ -5,7 +5,7 @@ function populateFormFields(requestFields, formId) {
     var fieldContainer = document.createElement('div');
     var label = document.createElement('label');
 
-    fieldContainer.className += 'form-field';
+    fieldContainer.classList.add('form-field');
 
     label.textContent = value.label;
 
@@ -17,9 +17,9 @@ function populateFormFields(requestFields, formId) {
 
     if (value.required) {
       var errorMessage = document.createElement('span')
-      errorMessage.textContent = "Este campo é requerido";
+      errorMessage.textContent = 'Este campo é requerido';
       errorMessage.style.display = 'none';
-      errorMessage.className += 'error-message';
+      errorMessage.classList.add('error-message');
       errorMessage.setAttribute('data-error', value.name);
 
       fieldContainer.appendChild(errorMessage);

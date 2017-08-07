@@ -2,7 +2,7 @@ function createSelect(fieldInfo) {
   var select = document.createElement('select');
   select.setAttribute('name', fieldInfo.name);
   options = fieldInfo.values;
-  if (fieldInfo.required) { select.className += 'requiredSelect'; }
+  if (fieldInfo.required) { select.classList.add('requiredSelect'); };
 
   var maskOption = document.createElement('option');
   maskOption.textContent = fieldInfo.mask;

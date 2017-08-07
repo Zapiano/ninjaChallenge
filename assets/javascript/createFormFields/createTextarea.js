@@ -4,7 +4,7 @@ function createTextarea(fieldInfo) {
   textarea.setAttribute('name', fieldInfo.name);
   textarea.setAttribute('placeholder', fieldInfo.placeholder);
 
-  if (fieldInfo.required) { textarea.className += 'requiredTextarea'; }
+  if (fieldInfo.required) { textarea.classList.add('requiredTextarea'); };
 
   return textarea;
 }
