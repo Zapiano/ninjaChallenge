@@ -1,4 +1,4 @@
-.request-form-container {
+.form-container {
   margin-top: -60px;
   margin-bottom: 30px;
   padding-top: 30px;
@@ -7,7 +7,7 @@
   border: 1px solid rgba(51,51,51,0.15);
 }
 
-.request-form-container fieldset {
+.form-container fieldset {
   padding: 0 25px;
   border: none;
 }
@@ -85,62 +85,7 @@
   font-size: 14px;
 }
 
-.button-container {
-  margin-top: 36px;
-}
-.btn {
-  padding: 16px 32px;
-  font-size: 14px;
-  background-color: #1393f6;
-  color: #fff;
-  display: block;
-  width: 100%;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 6px;
-  font-weight: 400;
-  text-align: center;
-  border: 0;
-  letter-spacing: .3px;
-}
-
-.btn:hover {
-  background-color: #1272d5;
-}
-
-.breadcrumb {
-  margin-top: 30px;
-  display: flex;
-  background-color: #e7e7e7;
-}
-
-.breadcrumb-step {
-  padding: 14px;
-  text-align: center;
-  width: 50%;
-  color: #536e7b;
-  font-size: 12px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-
-
-.breadcrumb-step.active {
-  background-color: #fff;
-}
-
-.breadcrumb-step.inactive {
-  color: rgba(83,110,123,0.5);
-}
-
-
 .form-field input[type=text].error--required, .form-field input[type=tel].error--required, .form-field input[type=email].error--required, .form-field select.error--required, .form-field textarea.error--required{
   border-color: #b24141;
 }
 
-.error-message {
-  margin-top: 8px;
-  color: #b24141;
-  display: inline-block;
-  font-size: 12px;
-}

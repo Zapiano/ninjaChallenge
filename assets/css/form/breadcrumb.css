@@ -1,0 +1,24 @@
+.breadcrumb {
+  margin-top: 30px;
+  display: flex;
+  background-color: #e7e7e7;
+}
+
+.breadcrumb-step {
+  padding: 14px;
+  text-align: center;
+  width: 50%;
+  color: #536e7b;
+  font-size: 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+
+.breadcrumb-step.active {
+  background-color: #fff;
+}
+
+.breadcrumb-step.inactive {
+  color: rgba(83,110,123,0.5);
+}

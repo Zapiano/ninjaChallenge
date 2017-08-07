@@ -1,0 +1,23 @@
+.btn-container {
+  margin-top: 36px;
+}
+
+.btn {
+  padding: 16px 32px;
+  font-size: 14px;
+  background-color: #1393f6;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 400;
+  text-align: center;
+  border: 0;
+  letter-spacing: .3px;
+}
+
+.btn:hover {
+  background-color: #1272d5;
+}

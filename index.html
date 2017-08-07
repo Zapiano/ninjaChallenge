@@ -5,8 +5,11 @@
 
     <title>Precisando de Cabeleireiros? | GetNinjas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./assets/css/stylesheet.css" rel="stylesheet">
-    <link href="./assets/css/request_form.css" rel="stylesheet">
+    <link href="./assets/css/application.css" rel="stylesheet">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/form/breadcrumb.css" rel="stylesheet">
+    <link href="./assets/css/form/button.css" rel="stylesheet">
+    <link href="./assets/css/form/general.css" rel="stylesheet">
     <script src="./assets/javascript/populateFormFields.js"></script>
     <script src="./assets/javascript/createFormFields.js"></script>
     <script src="./assets/javascript/createFormFields/createCheckbox.js"></script>
@@ -40,7 +43,7 @@
       </header>
     </section>
     <section class="container">
-      <div class='request-form-container'>
+      <div class='form-container'>
         <form>
           <fieldset id='request-fields'>
             <h2 class="form-title">
@@ -60,7 +63,7 @@
             </h2>
           </fieldset>
 
-          <fieldset class="button-container">
+          <fieldset class="btn-container">
             <button class="btn" id="request-fields__button" onclick="requestButtonHandler(event)">Buscar Profissionais</button>
             <button class="btn" id="user-fields__button" onclick="userButtonHandler(event)" style="display: none;">Finalizar</button>
           </fieldset>
