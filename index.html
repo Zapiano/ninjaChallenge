@@ -9,11 +9,21 @@
     <link href="./assets/css/request_form.css" rel="stylesheet">
     <script src="./assets/javascript/populateFormFields.js"></script>
     <script src="./assets/javascript/createFormFields.js"></script>
+    <script src="./assets/javascript/createFormFields/createCheckbox.js"></script>
+    <script src="./assets/javascript/createFormFields/createSelect.js"></script>
+    <script src="./assets/javascript/createFormFields/createTextarea.js"></script>
+    <script src="./assets/javascript/createFormFields/createTextInput.js"></script>
+    <script src="./assets/javascript/validateFields.js"></script>
+    <script src="./assets/javascript/validateFields/validateCheckbox.js"></script>
+    <script src="./assets/javascript/validateFields/validateSelect.js"></script>
+    <script src="./assets/javascript/validateFields/validateSelect.js"></script>
+    <script src="./assets/javascript/validateFields/validateTextInput.js"></script>
+    <script src="./assets/javascript/buttonHandler.js"></script>
   </head>
 
   <body>
-    <section class="container header">
-      <nav class="header-navbar">
+    <section class="header">
+      <nav class="container header-navbar">
         <img class="header-logo" src="./public/images/estetica.svg"/>
         <span class="header-name">
           <img src="./public/images/logo.svg">
@@ -51,8 +61,8 @@
           </fieldset>
 
           <fieldset class="request-form__button-container">
-            <button class="btn" id="request-fields__button">Buscar Profissionais</button>
-            <button class="btn" id="user-fields__button" style="display: none;">Finalizar</button>
+            <button class="btn" id="request-fields__button" onclick="requestButtonHandler(event)">Buscar Profissionais</button>
+            <button class="btn" id="user-fields__button" onclick="userButtonHandler(event)" style="display: none;">Finalizar</button>
           </fieldset>
         </form>
         <div class="breadcrumb">

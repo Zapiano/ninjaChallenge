@@ -75,6 +75,16 @@
   background-color: #eff4fa;
   font-size: 14px;
 }
+
+.form-field input[type=text], .form-field input[type=tel], .form-field input[type=email]{
+  display: block;
+  padding: 13px;
+  border: 1px solid rgba(19,147,246,0.5);
+  border-radius: 6px;
+  background-color: #eff4fa;
+  font-size: 14px;
+}
+
 .request-form__button-container {
   margin-top: 36px;
 }
@@ -121,4 +131,16 @@
 
 .breadcrumb-step.inactive {
   color: rgba(83,110,123,0.5);
+}
+
+
+.form-field input[type=text].error--required, .form-field input[type=tel].error--required, .form-field input[type=email].error--required, .form-field select.error--required, .form-field textarea.error--required{
+  border-color: #b24141;
+}
+
+.error-message {
+  margin-top: 8px;
+  color: #b24141;
+  display: inline-block;
+  font-size: 12px;
 }
